@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const Todo = ({ title }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
   const deleteHandler = () => {
     console.log("clicked");
   };
